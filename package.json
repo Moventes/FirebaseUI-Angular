@@ -1,5 +1,5 @@
 {
-  "name": "firebaseui-angular",
+  "name": "@speakylink/firebaseui-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,7 +19,8 @@
     "publish-dist": "npm run build-lib && npm publish dist/firebaseui-angular-library",
     "publish-dist-beta": "npm run build-lib && npm publish dist/firebaseui-angular-library --tag beta"
   },
-  "private": true,
+  "private": false,
+  "public": true,
   "dependencies": {
     "@angular/animations": "9.1.0",
     "@angular/common": "9.1.0",
@@ -33,7 +34,7 @@
     "@angular/router": "9.1.0",
     "core-js": "^3.3.3",
     "firebase": "^6.6.2",
-    "firebaseui": "^4.2.0",
+    "@speakylink/firebaseui": "4.5.0-fr",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

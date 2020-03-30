@@ -1,14 +1,14 @@
-import {Component, EventEmitter, Inject, NgZone, OnDestroy, OnInit, Output} from '@angular/core';
-import {AngularFireAuth} from '@angular/fire/auth';
-import {Subscription} from 'rxjs';
+import { Component, EventEmitter, Inject, NgZone, OnDestroy, OnInit, Output } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { Subscription } from 'rxjs';
 import {
   FirebaseUISignInFailure,
   FirebaseUISignInSuccessWithAuthResult,
   NativeFirebaseUIAuthConfig,
 } from './firebaseui-angular-library.helper';
-import * as firebaseui from 'firebaseui';
-import {User} from 'firebase/app';
-import {FirebaseuiAngularLibraryService} from './firebaseui-angular-library.service';
+import * as firebaseui from '@speakylink/firebaseui';
+import { User } from 'firebase/app';
+import { FirebaseuiAngularLibraryService } from './firebaseui-angular-library.service';
 import 'firebase/auth';
 import UserCredential = firebase.auth.UserCredential;
 
@@ -25,10 +25,10 @@ export class FirebaseuiAngularLibraryComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
 
   constructor(private angularFireAuth: AngularFireAuth,
-              @Inject('firebaseUIAuthConfig') private _firebaseUiConfig: NativeFirebaseUIAuthConfig,
-              @Inject('firebaseUIAuthConfigFeature') private _firebaseUiConfig_Feature: NativeFirebaseUIAuthConfig,
-              private ngZone: NgZone,
-              private firebaseUIService: FirebaseuiAngularLibraryService) {
+    @Inject('firebaseUIAuthConfig') private _firebaseUiConfig: NativeFirebaseUIAuthConfig,
+    @Inject('firebaseUIAuthConfigFeature') private _firebaseUiConfig_Feature: NativeFirebaseUIAuthConfig,
+    private ngZone: NgZone,
+    private firebaseUIService: FirebaseuiAngularLibraryService) {
   }
 
   get firebaseUiConfig(): NativeFirebaseUIAuthConfig {
