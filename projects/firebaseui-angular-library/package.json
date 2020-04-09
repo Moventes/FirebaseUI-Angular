@@ -1,6 +1,6 @@
 {
-  "name": "@speakylink/firebaseui-angular",
-  "version": "4.1.0-fr",
+  "name": "@roux-services/firebaseui-angular",
+  "version": "5.0.0-beta.0-fr",
   "repository": {
     "type": "git",
     "url": "https://github.com/RaphaelJenni/firebaseui-angular"
@@ -22,8 +22,8 @@
   "peerDependencies": {
     "@angular/common": "^6.1.2 || ^7.0.0 || ^8.0.0 || ^9.0.0",
     "@angular/core": "^6.1.2 || ^7.0.0 || ^8.0.0 || ^9.0.0",
-    "@angular/fire": "^5.0.0",
-    "@speakylink/firebaseui": "^4.5.0-fr",
+    "@angular/fire": "^6.0.0",
+    "@roux-services/firebaseui": "^4.5.0-fr",
     "firebase": "^5.3.1 || ^6.0.0 || ^7.0.0"
   },
   "scripts": {

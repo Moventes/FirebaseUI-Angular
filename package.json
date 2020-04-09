@@ -1,5 +1,5 @@
 {
-  "name": "@speakylink/firebaseui-angular",
+  "name": "@roux-services/firebaseui-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -26,15 +26,15 @@
     "@angular/common": "9.1.0",
     "@angular/compiler": "9.1.0",
     "@angular/core": "9.1.0",
-    "@angular/fire": "^5.2.1",
+    "@angular/fire": "^6.0.0",
     "@angular/forms": "9.1.0",
     "@angular/http": "7.2.15",
     "@angular/platform-browser": "9.1.0",
     "@angular/platform-browser-dynamic": "9.1.0",
     "@angular/router": "9.1.0",
     "core-js": "^3.3.3",
-    "firebase": "^6.6.2",
-    "@speakylink/firebaseui": "4.5.0-fr",
+    "firebase": "^7.13.2",
+    "@roux-services/firebaseui": "4.5.0-fr",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
